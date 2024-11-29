@@ -1,0 +1,222 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bgcolor:#000e1c;
+    --textwhite:#fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+header {
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    color: white;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo{
+    color: var(--textwhite);
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 3px 2px 20px #101111;
+}
+
+header nav .logo span{
+    color: #23a3fe;
+}
+
+
+    
+nav .nav-links a{
+
+        color: var(--textwhite);
+        margin: 0 30px;
+        transition: 0.3s;
+}
+
+header nav .nav-links a{
+
+    color: var(--textwhite);
+    margin: 0 30px;
+    transition: 0.3s;
+    font-size: 20PX;
+}
+
+header nav .nav-links a:hover{
+        color: #23a3fe;
+}    
+
+header nav .ss{
+    color:var(--textwhite);
+    font-size: 25px;
+    cursor: pointer;
+}
+        
+header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 40px 20px;
+}
+
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 40px;
+    transition: all 0.3s ease;
+}
+
+
+.about-me:hover {
+    transform: translateY(-10px);
+}
+
+
+.image-section {
+    flex: 1;
+    margin-left: 40px;
+    position: relative;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-section:hover .profile-image {
+    transform: scale(1.05);
+}
+
+
+.text-section {
+    flex: 2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-section h1 {
+    font-size: 2.8rem;
+    color: #6a82fb;
+    margin-bottom: 15px;
+    text-shadow: 1px 3px 6px #030303;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contact-btn {
+    padding: 14px 24px;
+    background-color: #6a82fb;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: fit-content;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-btn:hover {
+    background-color: #4e6ccf;
+    transform: translateY(-5px);
+}
+
+footer{
+    background-color: #ecf1f1;
+    color: #0f0e0e;
+    text-align: center;
+    padding: 3px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ nav.social-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav.social-icons a {
+    margin: 0 9px;
+    display: inline-block;
+  }
+  
+  nav.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+  }
+    /* تأثير عند المرور على الأيقونات */
+    nav.social-icons img:hover {
+        transform: scale(1.1);
+      }
+      
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        width: 90%;
+        padding: 25px;
+    }
+
+    .image-section {
+        margin-left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 60%;
+        height: 250px;
+        border-radius: 50%;
+    }
+
+    .text-section {
+        flex: none;
+    }
+}
+

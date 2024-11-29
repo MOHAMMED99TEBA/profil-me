@@ -1,0 +1,207 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --bgcolor:#000e1c;
+    --textwhite:#fff;
+}
+
+.hero{
+    background: var(--bgcolor);
+    height: 100vh;
+    overflow: hidden; /*اخفاء الحواف*/
+}
+
+.hero header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.hero header nav .logo{
+color: var(--textwhite);
+font-size: 35px;
+font-weight: bold;
+text-shadow: 3px 2px 20px #23a3fe;
+}
+
+.hero header nav .logo span{
+    color: #23a3fe;
+}
+
+.hero header nav .nav-links a{
+
+color: var(--textwhite);
+margin: 0 30px;
+transition: 0.3s;
+font-size: 20PX;
+}
+
+.hero header nav .nav-links a:hover{
+    color: #23a3fe;
+}
+
+.hero header nav .ss{
+    color:var(--textwhite);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.hero .contanier{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    height: calc(100vh -100px);
+    position: relative;
+}
+
+.hero .contanier .div-text{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(30%);
+    width: 50%;
+}
+.hero .contanier .div-img{
+    position: absolute;
+    width: 34%;
+    bottom: -50;
+    margin-right: 50px;
+}
+.hero .contanier .div-img img{
+    width: 100%;
+}
+
+.hero .contanier .div-text h4{
+color: #888;
+font-size: 26px;
+}
+
+.hero .contanier .div-text h1{
+    color: var(--textwhite);
+    font-size: 60px;
+    margin: 15px 0 10px;
+    text-shadow: 1px 1px 10px #23a3fe;
+}
+
+.hero .contanier .div-text span{
+    color: #23a3fe;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.hero .contanier .div-text p{
+    color: var(--textwhite);
+    line-height: 1.8;
+    margin: 20px 0 40px;
+    font-size: 20px;
+}
+.hero .contanier .div-text .btn{
+    color: #fff;
+    background: #23a3fe;
+    padding: 15px 30px;
+    border: 1px solid #23a3fe;
+    position: relative;
+    top: 0;
+    transition: 0.4s;
+}
+
+.hero .contanier .div-text .btn:hover{
+    top: -8px;
+    box-shadow: 0 0 15px #23a3fe;
+}
+.socil-icon{
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    right: -90px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.socil-icon a{
+    color: #23a3fe;
+    font-size: 30px;
+    transition: 0.4s;
+}
+
+.socil-icon a:hover{
+    transform: scale(1.2);
+}
+
+/* الفوتر */
+footer {
+    background-color: #5cc8fe;
+    color: white;
+    padding: 2px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    bottom: -595px;
+  }
+  
+  .footer-content {
+    font-size: 12px;
+    display: inline-block;
+  }
+  
+  .university-name {
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .author-name {
+    font-size: 10px;
+  }
+  
+
+  nav.social-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    left: 35%;
+    align-items: center;
+  }
+  
+  nav.social-icons a {
+    margin: 0 9px;
+    display: inline-block;
+  }
+  
+  nav.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+  }
+  
+
+  nav.social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    footer {
+      text-align: center;
+    }
+    .footer-content {
+      margin-bottom: 15px;
+    }
+    nav.social-icons {
+      margin-top: 10px;
+    }
+  }
+  
+
+

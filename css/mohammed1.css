@@ -1,0 +1,172 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --bgcolor:#000e1c;
+    --textwhite:#fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, #6a82fb, #fc5c7d);
+    color: white;
+    padding: 0px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo{
+    color: var(--textwhite);
+    font-size: 35px;
+    font-weight: bold;
+    text-shadow: 3px 2px 20px #101111;
+}
+
+header nav .logo span{
+    color: #23a3fe;
+}
+
+
+    
+nav .nav-links a{
+
+        color: var(--textwhite);
+        margin: 0 30px;
+        transition: 0.3s;
+}
+
+header nav .nav-links a{
+
+    color: var(--textwhite);
+    margin: 0 30px;
+    transition: 0.3s;
+    font-size: 20PX;
+}
+
+header nav .nav-links a:hover{
+        color: #23a3fe;
+}    
+
+header nav .ss{
+    color:var(--textwhite);
+    font-size: 25px;
+    cursor: pointer;
+}
+        
+header nav{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+.services-title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.services-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.services-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);  
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  
+}
+
+.card figure {
+    margin: 0;
+    position: relative;
+}
+
+.card img {
+    width: 50%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+
+.card figcaption {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+footer{
+    background-color: #ecf1f1;
+    color: #0f0e0e;
+    text-align: center;
+    padding: 3px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+ nav.social-icons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav.social-icons a {
+    margin: 0 9px;
+    display: inline-block;
+  }
+  
+  nav.social-icons img {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+  }
+   /* تأثير عند المرور على الأيقونات */
+   nav.social-icons img:hover {
+    transform: scale(1.1);
+  }
+  
